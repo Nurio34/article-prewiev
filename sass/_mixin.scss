@@ -1,0 +1,22 @@
+@mixin font ($clr,$bg-clr,$ff,$fs,$fw,$algn) {
+    color : $clr;
+    background-color: $bg-clr;
+    font : {
+        family : $ff ;
+        size : $fs;
+        weight : $fw;
+    }
+    text : {
+        align : $algn; 
+    }
+}
+
+
+
+@mixin flex ($dsply,$drctn,$jstfy-cntnt,$algn-itms,$gp) {
+    display : $dsply;
+    flex-direction: $drctn;
+    justify-content : $jstfy-cntnt;
+    align-items : $algn-itms;
+    gap:$gp;
+}
